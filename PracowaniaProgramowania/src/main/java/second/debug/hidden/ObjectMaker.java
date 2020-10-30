@@ -35,7 +35,7 @@ public class ObjectMaker {
         for (int i = 0; i < size - 1; i++) {
             list.add(new Double(Math.random() * 100000).intValue());
         }
-        list.add(null);
+        //list.add(null);
 
         return list;
     }
@@ -47,7 +47,7 @@ public class ObjectMaker {
             array[i] = new Double(Math.random() * 100000);
         }
 
-        array[(int) (Math.random() * (size - 1))] = null;
+        //array[(int) (Math.random() * (size - 1))] = null;
 
         return array;
     }
