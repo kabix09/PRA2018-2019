@@ -13,7 +13,7 @@ public class Person implements IPerson {
     String name;
     Enum title;
 
-    Person(String name, fluentAPI.interfaces.Title title) {
+    public Person(String name, fluentAPI.interfaces.Title title) {
         this.name = name;
         this.title = title;
     }
@@ -30,7 +30,8 @@ public class Person implements IPerson {
 
     @Override
     public IPerson sayHelloToFriends() {
-        // ToDo
+        for(Person person : this.friends)
+            System.out.println("Hello " + person.name);
         return this;
     }
 
